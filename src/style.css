@@ -1,78 +1,103 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
-  margin:0;
-  font-family: 'Inter', sans-serif;
-  background-color: #282D35;
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 /* Navbar Section */
 
-.navbar{
-  background-color:#21222A;
-  display:flex;
-  justify-content:space-between;
+.navbar {
+  background-color: #21222a;
+  display: flex;
+  justify-content: space-between;
   height: 90px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-logo{
-  display:flex;
+.nav-logo {
+  display: flex;
   flex-direction: row;
   padding-left: 20px;
-
 }
-.navbar h1{
-  color:#61DAFB;
+.navbar h1 {
+  color: #61dafb;
   font-weight: 700;
   font-size: 22.25px;
   align-self: center;
 }
 
-.navbar p{
-  color: #DEEBF8;
+.navbar p {
+  color: #deebf8;
   padding-right: 20px;
   font-size: 16px;
   font-weight: 600;
   align-self: center;
 }
-.reactLogo{
+.reactLogo {
   width: 60px;
   margin: auto;
   display: inline;
 }
 
-
 /* Main Section */
 
-.main--section{
+main{
+  width: 100%;
+  height: 100vh;
+  flex: 1 1 auto;
+}
+
+.main--section {
   background-image: url(./images/reactlogo_large.png);
   background-repeat: no-repeat;
   background-position: right center;
-  margin-top:50px;
-  margin-left: 25px;
-  font-family: 'Inter', sans-serif;
+  padding: 57px 27px;
+  font-family: "Inter", sans-serif;
   color: #fff;
+  background-color: #282d35;
 }
 
-.facts--heading{
+.facts--heading {
   margin-bottom: 50px;
 }
 
-.facts--list{
+.facts--list {
   max-width: 400px;
 }
 
-.facts--list > li{
-  margin-bottom:20.36px;
+.facts--list > li {
+  margin-bottom: 20.36px;
 }
 
-.facts--list > li::marker{
-  color: #61DAFB;
+.facts--list > li::marker {
+  color: #61dafb;
   font-size: 1.4rem;
 }
 
-.main--react_logo{
-  filter:hue-rotate(218deg);;
+.main--react_logo {
+  filter: hue-rotate(218deg);
+}
+
+.light {
+  color: #2b283a;
+  background-color: #fff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lightText{
+  color: #2b283a;
+background-color: #fff;
+}
+
+.dark {
+  color: #fff;
 }
